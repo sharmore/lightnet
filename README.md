@@ -9,11 +9,11 @@ rm -rf /var/lib/rabbitmq
 rpm -e rabbitmq-server
 
 CentOS 7 的下载安装：
-http://www.unixodbc.org/unixODBC-2.3.7.tar.gz   ./configure --prefix=/usr/local
-http://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz  ./configure --prefix=/usr/local
-http://distfiles.macports.org/openssl/openssl-1.0.2.tar.gz  ./config --prefix=/usr/local/ssl    Makefile中CFLAG选项加上-fPIC
-http://erlang.org/download/otp_src_R16B03.tar.gz  ./configure --prefix=/usr/local/erlang --with-ssl=/usr/local/ssl --enable-threads --enable-smp-support --enable-kernel-poll --enable-hipe --without-javac
-https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.10/rabbitmq-server-3.6.10-1.el6.noarch.rpm  rpm -i --nodeps rabbitmq-server-3.6.10-1.el6.noarch.rpm
+1、http://www.unixodbc.org/unixODBC-2.3.7.tar.gz   ./configure --prefix=/usr/local
+2、http://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz  ./configure --prefix=/usr/local
+3、http://distfiles.macports.org/openssl/openssl-1.0.2.tar.gz  ./config --prefix=/usr/local/ssl    Makefile中CFLAG选项加上-fPIC
+4、http://erlang.org/download/otp_src_R16B03.tar.gz  ./configure --prefix=/usr/local/erlang --with-ssl=/usr/local/ssl --enable-threads --enable-smp-support --enable-kernel-poll --enable-hipe --without-javac
+5、https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.10/rabbitmq-server-3.6.10-1.el6.noarch.rpm  rpm -i --nodeps rabbitmq-server-3.6.10-1.el6.noarch.rpm
 
 准备：
 mkdir -p /var/lib/rabbitmq
